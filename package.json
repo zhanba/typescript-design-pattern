@@ -1,0 +1,21 @@
+{
+  "name": "typescript-design-pattern",
+  "version": "1.0.0",
+  "description": "typescript design pattern code example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "design",
+    "pattern"
+  ],
+  "author": "zhanba <c5e1856@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^5.0.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1"
+  }
+}
