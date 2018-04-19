@@ -6,7 +6,7 @@ class Payload {
   }
 }
 
-class Engine {
+export class Engine {
   thrust: number
 
   constructor(x: number) {
