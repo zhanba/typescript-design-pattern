@@ -39,8 +39,8 @@ class ExperimentalRocketStage implements IStage {
 }
 
 class ExperimentRocket implements IRocket {
-  payload: ExperimentalPayload = new ExperimentalPayload()
-  stages: [ExperimentalRocketStage] = [new ExperimentalRocketStage()]
+  payload!: ExperimentalPayload
+  stages!: [ExperimentalRocketStage]
 }
 
 class ExperimentRocketFactory implements IRocketFactory<ExperimentRocket> {
@@ -63,18 +63,18 @@ class Satellite implements IPayload {
 }
 
 class FreightRocketFirstStage implements IStage {
-  engines: Engine[] = [new Engine(11)]
+  engines!: Engine[]
 }
 
 class FreightRocketSecondStage implements IStage {
-  engines: Engine[] = [new Engine(22)]
+  engines!: Engine[]
 }
 
 type FreightRocketStages = [FreightRocketFirstStage, FreightRocketSecondStage]
 
 class FreightRocket implements IRocket {
-  payload: Satellite = new Satellite(1, 2)
-  stages: FreightRocketStages = [new FreightRocketFirstStage(), new FreightRocketSecondStage()]
+  payload!: Satellite
+  stages!: FreightRocketStages
 }
 
 class FreightRocketFactory implements IRocketFactory<FreightRocket> {

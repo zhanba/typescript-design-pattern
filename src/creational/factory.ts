@@ -1,4 +1,4 @@
-class Payload {
+export class Payload {
   weight: number
 
   constructor(x: number) {
