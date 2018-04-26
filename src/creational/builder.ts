@@ -63,20 +63,20 @@ class Satellite implements Payload {
   constructor(public id: number, public weight: number) {}
 }
 
-class FreightRocket implements IRocket {
-  payload!: Satellite
-  stages: FreightRocketStages = []
-}
+// class FreightRocket implements IRocket {
+//   payload!: Satellite
+//   stages: FreightRocketStages = []
+// }
 
-class Director {
-  prepareRocket<TRocket extends IRocket, TPayload extends Payload>(
-    builder: RocketBuilder<TRocket, TPayload>,
-    payload: TPayload
-  ): TRocket {
-    builder.createRocket()
-    builder.addPayload(payload)
-    builder.addStages()
-    builder.refuelRocket()
-    return builder.rocket
-  }
-}
+// class Director {
+//   prepareRocket<TRocket extends IRocket, TPayload extends Payload>(
+//     builder: RocketBuilder<TRocket, TPayload>,
+//     payload: TPayload
+//   ): TRocket {
+//     builder.createRocket()
+//     builder.addPayload(payload)
+//     builder.addStages()
+//     builder.refuelRocket()
+//     return builder.rocket
+//   }
+// }
